@@ -42,11 +42,41 @@
     /* Secciones */
     .secciones {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       padding: 40px;
       max-width: 1200px;
       margin: auto;
+    }
+
+    /* Tablets */
+    @media (max-width: 900px) {
+      .secciones {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+      }
+    }
+
+    /* Teléfonos */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      .secciones {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
     }
 
     .card {
@@ -132,8 +162,3 @@
 
 </body>
 </html>
-
-
-
-
-  
