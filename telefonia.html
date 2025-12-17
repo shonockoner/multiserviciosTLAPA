@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telefonía</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .marcas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    @media (max-width: 900px) {
+      .marcas {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .marca {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .marca img {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Telefonía</h1>
+  </header>
+
+  <section class="marcas">
+    <div class="marca"><img src="imagenes/samsung.png" alt="Samsung"></div>
+    <div class="marca"><img src="imagenes/xiaomi.png" alt="Xiaomi"></div>
+    <div class="marca"><img src="imagenes/redmi.png" alt="Redmi"></div>
+    <div class="marca"><img src="imagenes/honor.png" alt="Honor"></div>
+    <div class="marca"><img src="imagenes/motorola.png" alt="Motorola"></div>
+    <div class="marca"><img src="imagenes/apple.png" alt="Apple"></div>
+    <div class="marca"><img src="imagenes/oppo.png" alt="Oppo"></div>
+    <div class="marca"><img src="imagenes/honor.png" alt="Honor"></div>
+  </section>
+
+</body>
+</html>
