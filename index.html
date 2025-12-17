@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiservicios</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
+    .secciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card .img {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .mercado { background: linear-gradient(135deg, #16a34a, #166534); }
+    .servicios { background: linear-gradient(135deg, #2563eb, #1e40af); }
+    .telefonia { background: linear-gradient(135deg, #9333ea, #6b21a8); }
+    .mayoreo { background: linear-gradient(135deg, #ea580c, #9a3412); }
+    .transporte { background: linear-gradient(135deg, #0f766e, #134e4a); }
+    .ofertas { background: linear-gradient(135deg, #dc2626, #7f1d1d); }
+
+    .card h3 {
+      margin: 15px 0 20px;
+      font-size: 18px;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Multiservicios</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Negocios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Secciones principales -->
+  <section class="secciones">
+    <div class="card">
+      <div class="img mercado">Mercado</div>
+      <h3>Mercado</h3>
+    </div>
+    <div class="card">
+      <div class="img servicios">Servicios</div>
+      <h3>Servicios</h3>
+    </div>
+    <div class="card">
+      <div class="img telefonia">Telefonía</div>
+      <h3>Telefonía</h3>
+    </div>
+    <div class="card">
+      <div class="img mayoreo">Mayoreo</div>
+      <h3>Mayoreo</h3>
+    </div>
+    <div class="card">
+      <div class="img transporte">Transporte</div>
+      <h3>Transporte</h3>
+    </div>
+    <div class="card">
+      <div class="img ofertas">Ofertas</div>
+      <h3>Ofertas</h3>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+
+  
